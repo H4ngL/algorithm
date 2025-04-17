@@ -14,7 +14,6 @@ bool isSimilar(string str)
     if (abs(len1 - len2) > 1)
         return false;
 
-    unordered_map<char, int> copied = map;
     unordered_map<char, int> curMap;
     for (char c : str)
         curMap[c]++;
@@ -22,7 +21,7 @@ bool isSimilar(string str)
     int diff = 0;
     for (char c = 'A'; c <= 'Z'; c++)
     {
-        diff += abs(copied[c] - curMap[c]);
+        diff += abs(map[c] - curMap[c]);
     }
 
     return diff <= 1 || (diff == 2 && len1 == len2);
