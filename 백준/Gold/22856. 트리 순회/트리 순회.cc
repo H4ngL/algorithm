@@ -1,15 +1,3 @@
-/*
- * BOJ #22856 - 트리 순회
- * https://www.acmicpc.net/problem/22856
- * 
- * 알고리즘 분류: 그래프 탐색
- * 
- * 풀이 요약:
- * - 
- * 
- * 날짜: 2025-08-17
- */
-
 #include <iostream>
 #include <vector>
 using namespace std;
